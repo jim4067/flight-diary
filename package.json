@@ -4,9 +4,10 @@
   "description": "making managing flight history easier",
   "main": "index.ts",
   "scripts": {
-    "dev" : "ts-node-dev index.ts",
-    "lint" : "eslint --ext .ts .",
-     "tsc": "tsc"
+    "dev": "ts-node-dev index.ts",
+    "lint": "eslint --ext .ts .",
+    "start": "node build/index.js",
+    "tsc": "tsc"
   },
   "author": "jim4067",
   "license": "ISC",
