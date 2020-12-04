@@ -1,7 +1,11 @@
 import diary_data from '../../data/diaries.json';
 
-const get_entries = () => {
-    return diary_data;
+import { diary_entry } from '../types';
+
+const diaries: Array<diary_entry> = diary_data as unknown as Array<diary_entry>;
+
+const get_entries = (): Array<diary_entry> => {
+    return diaries;
 };
 
 const add_entry = () => {
@@ -10,8 +14,8 @@ const add_entry = () => {
 
 
 export default {
-    getEntries,
-    addEntry
+    get_entries,
+    add_entry
 };
 
 
