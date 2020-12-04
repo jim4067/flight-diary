@@ -1,8 +1,8 @@
-import diary_data from '../../data/diaries.json';
+import diary_data from '../../data/diaries';
 
 import { diary_entry } from '../types';
 
-const diaries: Array<diary_entry> = diary_data as unknown as Array<diary_entry>;
+const diaries: Array<diary_entry> = diary_data;
 
 const get_entries = (): Array<diary_entry> => {
     return diaries;
